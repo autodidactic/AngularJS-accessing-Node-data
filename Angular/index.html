@@ -1,0 +1,20 @@
+    <body ng-app="myApp">
+    <div ng-controller="UserListCtrl">
+        <table><th>Users</th><th>Email</th>
+        <tr ng-repeat="user in users">
+            <div class="span10">
+                <td >
+                {{user.name}}
+                
+            </td>
+             <td >
+            
+                   {{user.email}}
+            </td> 
+            </div>
+        </tr>
+            
+        </table>        
+        </div>
+        </body>
+    
