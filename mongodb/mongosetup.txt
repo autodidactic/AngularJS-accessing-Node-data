@@ -3,3 +3,6 @@ install mongodb
 run mongodb server
 
 c:\mongodb\mongod.exe 
+
+
+prompt shows db running on port 28017
