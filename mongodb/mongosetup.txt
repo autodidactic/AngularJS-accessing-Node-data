@@ -1,0 +1,5 @@
+install mongodb
+
+run mongodb server
+
+c:\mongodb\mongod.exe 
