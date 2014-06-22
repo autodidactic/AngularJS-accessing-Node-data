@@ -1,20 +1,34 @@
-    <body ng-app="myApp">
+<body ng-app="myApp">
     <div ng-controller="UserListCtrl">
-        <table><th>Users</th><th>Email</th>
-        <tr ng-repeat="user in users">
-            <div class="span10">
-                <td >
-                {{user.name}}
-                
-            </td>
-             <td >
-            
-                   {{user.email}}
-            </td> 
-            </div>
-        </tr>
-            
-        </table>        
-        </div>
-        </body>
-    
+        <table>
+            <th>Users</th>
+            <th>Email</th>
+            <tr ng-repeat="user in users">
+                <td>{{user.username}}</td><td> {{user.email}}</td>
+  
+            </tr>
+        </table>
+        <form name="form" id="form1" ng-submit="save()">
+            <fieldset>
+                <div class="control-group">
+                    <center>
+                        <input type="text" placeholder="User…" ng-model="username" size="50" />
+                    </center>
+                    <center>
+                        <input type="text" placeholder="Password…" ng-model="password" size="50" />
+                    </center>
+                    <center>
+                        <input type="text" placeholder="Email…" ng-model="email" size="50" />
+                    </center>
+                </div>
+            </fieldset>
+            <p>
+                <div>
+                    <center>
+                        <button type="submit">Save now...</button>
+                    </center>
+                </div>
+            </p>
+        </form>
+    </div>
+</body>
